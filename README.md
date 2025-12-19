@@ -8,6 +8,11 @@ On va faire ensemble les trois étapes qui vont te transformer en utilisateur Ne
 2. Vérifier que tout fonctionne (`checkhealth`)
 3. Apprendre à organiser ta config comme un pro (le split de plugins)
 
+**Les ressources qu'on va utiliser :**
+- 🌟 **Neovim** : https://github.com/neovim/neovim
+- 🚀 **Kickstart.nvim** : https://github.com/nvim-lua/kickstart.nvim
+- 🔭 **Telescope** : https://github.com/nvim-telescope/telescope.nvim
+
 ---
 
 ## Étape 1 : Avant de commencer
@@ -141,9 +146,9 @@ Si tu as fini avant tout le monde, voilà des trucs sympas à try.
 ### Bonus 1 : Split d'autres plugins
 
 Maintenant que t'as compris le truc, répète avec :
-- **neo-tree** (l'explorateur de fichiers)
-- **lspconfig** (l'autocomplétion)
-- **gitsigns** (les modifications Git en live)
+- **neo-tree** (l'explorateur de fichiers) - https://github.com/nvim-neo-tree/neo-tree.nvim
+- **lspconfig** (l'autocomplétion) - https://github.com/neovim/nvim-lspconfig
+- **gitsigns** (les modifications Git en live) - https://github.com/lewis6991/gitsigns.nvim
 
 Même processus. Tu vas être rapide.
 
@@ -151,12 +156,12 @@ Même processus. Tu vas être rapide.
 
 Crée `lua/custom/plugins/theme.lua` et teste un truc qui te plaît :
 
-| Thème | Commande |
-|-------|----------|
-| **Tokyonight** (sombre et cool) | `vim.cmd.colorscheme 'tokyonight-night'` |
-| **Catppuccin** (couleurs chaudes) | `vim.cmd.colorscheme 'catppuccin-mocha'` |
-| **Nightfox** (épuré) | `vim.cmd.colorscheme 'nordfox'` |
-| **Gruvbox** (warm vibes) | `vim.cmd.colorscheme 'gruvbox'` |
+| Thème | Commande | Repo |
+|-------|----------|------|
+| **Tokyonight** (sombre et cool) | `vim.cmd.colorscheme 'tokyonight-night'` | https://github.com/folke/tokyonight.nvim |
+| **Catppuccin** (couleurs chaudes) | `vim.cmd.colorscheme 'catppuccin-mocha'` | https://github.com/catppuccin/nvim |
+| **Nightfox** (épuré) | `vim.cmd.colorscheme 'nordfox'` | https://github.com/EdenEast/nightfox.nvim |
+| **Gruvbox** (warm vibes) | `vim.cmd.colorscheme 'gruvbox'` | https://github.com/morhetz/gruvbox |
 
 Essaie plusieurs et vois ce qui te plaît.
 
@@ -194,7 +199,7 @@ Puis dans `init.lua` ajoute juste : `require('custom.keymaps')`
 
 ### Bonus 5 : Autopairs (parenthèses auto)
 
-Crée `lua/custom/plugins/autopairs.lua` :
+Crée `lua/custom/plugins/autopairs.lua` (repo: https://github.com/windwp/nvim-autopairs) :
 
 ```lua
 return {
@@ -249,3 +254,35 @@ D'ici, tu peux:
 - Customiser à ta guise
 
 **Amuse-toi bien ! 🚀**
+
+---
+
+## 📚 Les ressources utiles
+
+### Le core
+- **Neovim** : https://github.com/neovim/neovim
+- **Kickstart.nvim** : https://github.com/nvim-lua/kickstart.nvim
+
+### Plugins qu'on a vus
+- **Telescope** (recherche) : https://github.com/nvim-telescope/telescope.nvim
+- **Neo-tree** (explorateur) : https://github.com/nvim-neo-tree/neo-tree.nvim
+- **LSPConfig** (autocomplétion) : https://github.com/neovim/nvim-lspconfig
+- **Gitsigns** (Git) : https://github.com/lewis6991/gitsigns.nvim
+- **Autopairs** (parenthèses) : https://github.com/windwp/nvim-autopairs
+
+### Themes qu'on a recommandé
+- **Tokyonight** : https://github.com/folke/tokyonight.nvim
+- **Catppuccin** : https://github.com/catppuccin/nvim
+- **Nightfox** : https://github.com/EdenEast/nightfox.nvim
+- **Gruvbox** : https://github.com/morhetz/gruvbox
+
+### Plugins populaires à explorer plus tard
+- **Which-key** (affiche les raccourcis) : https://github.com/folke/which-key.nvim
+- **Treesitter** (coloration syntaxique) : https://github.com/nvim-treesitter/nvim-treesitter
+- **Lazy.nvim** (gestionnaire de plugins) : https://github.com/folke/lazy.nvim
+- **Mason** (gestionnaire de LSP/formatters) : https://github.com/williamboman/mason.nvim
+
+### Docs et tutos
+- **awesomevim** (liste de tous les plugins) : https://github.com/rockerBOO/awesome-neovim
+- **Neovim docs** : https://neovim.io/doc/
+- **Lua guide** : https://learnxinyminutes.com/docs/lua/
