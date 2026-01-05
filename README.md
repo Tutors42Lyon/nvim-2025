@@ -93,6 +93,8 @@ L'idée : Un plugin = Un fichier. Boom. Propre.
 
 **Étape 1 :** Ouvre `init.lua`
 
+**Étape 2 :** Tape `G` pour aller à la fin du fichier et décommente cette ligne `  -- { import = 'custom.plugins' }, `
+
 **Étape 2 :** Cherche Telescope (tape `/telescope` + Enter)
 
 **Étape 3 :** Tu vois un bloc qui commence par `{ 'nvim-telescope/telescope.nvim',`
